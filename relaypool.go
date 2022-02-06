@@ -98,7 +98,7 @@ func (r *RelayPool) Add(url string, policy RelayPoolPolicy) error {
 		for {
 			typ, message, err := conn.socket.ReadMessage()
 			if err != nil {
-				log.Println("read error: ", err)
+				panic("read error: " + err.Error())
 				return
 			}
 			if typ == websocket.PingMessage {

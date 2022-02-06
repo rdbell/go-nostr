@@ -1,4 +1,4 @@
-module github.com/fiatjaf/go-nostr
+module github.com/rdbell/go-nostr
 
 go 1.15
 
